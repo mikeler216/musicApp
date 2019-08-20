@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
             sounds[index].play();
             createBubbels(index);
         })
-    })
+    });
     const createBubbels = (index) => {
         const bubble = document.createElement('div');
         visual.appendChild(bubble);
@@ -20,5 +20,5 @@ window.addEventListener('load', () => {
         bubble.addEventListener('animationend', function(){
             visual.removeChild(this)
         })
-    } 
-})
+    }
+});
